@@ -1,0 +1,46 @@
+name: flutter_iot
+description: A Flutter IoT project
+
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_native_splash: ^2.4.3
+  fl_chart: 0.69.2
+  http: ^1.2.2
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  assets:
+    - assets/images/
+
+  uses-material-design: true
+
+flutter_native_splash:
+  color: "#0F151A"  # Warna latar belakang splash screen
+  image: assets/images/iot.png  # Gambar yang digunakan di splash screen
+  android: true
+  ios: true
+  web: true
+  fullscreen: true  # Untuk tampilan splash screen fullscreen
+  android_gravity: center  # Posisi gambar di tengah layar pada Android
+  ios_content_mode: scaleAspectFill  # Menjaga proporsi gambar di iOS
+  web_image_mode: contain  # Menjaga gambar agar tidak terpotong di web
+  android_background: "#0F151A"  # Warna latar belakang splash screen
+  ios_background: "#0F151A"  # Warna latar belakang splash screen di iOS
+  web_background: "#0F151A"  # Warna latar belakang splash screen di Web
+  text: "Sensor IoT"  # Teks yang ditampilkan di splash screen
+  text_style:
+    fontSize: 24  # Ukuran font teks
+    color: "#FFFFFF"  # Warna font teks
+    fontFamily: "Roboto"  # Jenis font
